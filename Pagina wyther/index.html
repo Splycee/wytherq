@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="icon" type="image/png" href="favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wyther mc | Home</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{
+  color:#fff;
+  background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkjbkID71MjN929Db-jOhyVTgzaTdpycq8Lg&s') repeat-x;
+  background-size:cover;
+  animation:moveBg 60s linear infinite;
+  overflow-x:hidden;
+}
+@keyframes moveBg{
+  from{background-position:0 0;}
+  to{background-position:-2000px 0;}
+}
+header{
+  position:fixed;top:0;width:100%;background:rgba(0,0,0,0.7);display:flex;justify-content:space-between;align-items:center;padding:15px 40px;z-index:1000;
+  box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+header h1{font-size:1.8em;color:#ffd700;text-shadow:0 0 10px #ffae00;}
+nav a{
+  color:#fff;text-decoration:none;margin:0 15px;font-weight:600;transition:0.3s;
+}
+nav a:hover{color:#ffd700;}
+.hero{
+  height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;background:rgba(0,0,0,0.4);
+}
+.hero h2{font-size:3em;color:#ffd700;text-shadow:0 0 20px #ffae00;animation:fadeIn 2s ease-in-out;}
+.hero p{max-width:600px;margin-top:20px;font-size:1.2em;line-height:1.6;animation:fadeIn 3s ease-in-out;}
+.buttons{margin-top:30px;display:flex;gap:20px;}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;padding:12px 25px;border:none;border-radius:10px;font-weight:600;cursor:pointer;background:#ffae00;color:#000;transition:0.3s;box-shadow:0 0 10px #ffae00;
+}
+.btn i{font-size:1.2em;}
+.btn:hover{transform:scale(1.05);background:#ffd700;}
+section{padding:100px 60px;background:rgba(0,0,0,0.5);}
+section h3{font-size:2em;margin-bottom:20px;color:#ffd700;text-align:center;}
+section p{max-width:900px;margin:0 auto;font-size:1.1em;line-height:1.7;text-align:center;}
+.faq-container{max-width:900px;margin:40px auto;}
+.faq{
+  background:rgba(255,255,255,0.1);margin:10px 0;padding:15px 20px;border-radius:10px;cursor:pointer;transition:0.3s;
+}
+.faq:hover{background:rgba(255,255,255,0.2);}
+.faq h4{display:flex;justify-content:space-between;align-items:center;color:#ffd700;}
+.faq p{display:none;margin-top:10px;text-align:left;}
+.faq.active p{display:block;animation:fadeIn 0.5s ease-in-out;}
+.rules{max-width:1000px;margin:40px auto;background:rgba(0,0,0,0.7);padding:30px;border-radius:20px;}
+.rules h4{color:#ffd700;margin-bottom:10px;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Wyther MC</h1>
+  <nav>
+    <a href="#about">Sobre Nosotros</a>
+    <a href="#survival">Survival</a>
+    <a href="#faq">Preguntas</a>
+    <a href="#rules">Reglas</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Bienvenido a Wyther MC</h2>
+  <p>Un mundo donde la creatividad, la comunidad y la diversión se unen. ¡Explora, construye y crea tu historia en nuestro servidor survival y mucho más!</p>
+  <div class="buttons">
+    <button class="btn" onclick="window.open('https://discord.gg/R2h9DvUKtt','_blank')"><i class="fab fa-discord"></i>Discord</button>
+    <button class="btn" onclick="window.open('https://wyther-tienda.tebex.io/?action=preview&signature=f27fd3edc231dc4daa1ad74a1c5bc081f967bc338b958406b298f3854b3aec0b&expires=1762127540','_blank')"><i class="fas fa-shopping-cart"></i>Tienda</button>
+  </div>
+</section>
+
+<section id="about">
+  <h3>Sobre Nosotros</h3>
+  <p>Wyther MC es una comunidad creada con pasión por el gaming y la creatividad. Nos dedicamos a ofrecer una experiencia completa para todos los jugadores, desde los más casuales hasta los más competitivos. En Wyther, encontrarás modos survival llenos de aventuras, sistemas de economía, clanes, eventos, y una comunidad activa y amigable. Nuestro objetivo es construir un espacio donde la diversión nunca termine. Cada día mejoramos nuestros servidores, agregamos contenido nuevo y escuchamos a nuestros jugadores para crecer juntos. Wyther nació como un sueño de unir a jugadores bajo una misma bandera de diversión, respeto y competencia sana. Nos enorgullece ofrecer estabilidad, personal atento, sistemas innovadores y una red que evoluciona contigo. ¡Únete y sé parte de esta historia!</p>
+</section>
+
+<section id="survival">
+  <h3>Modo Survival</h3>
+  <p>En el survival de Wyther encontrarás una experiencia balanceada entre reto y creatividad. Con protecciones seguras, economía activa, trabajos, tiendas y un ambiente justo, podrás construir, comerciar y competir con otros jugadores. Hemos integrado sistemas de clanes, misiones y eventos especiales para mantener la aventura viva. Cada temporada trae mejoras, nuevos biomas y oportunidades únicas. Disfruta de una jugabilidad fluida y optimizada, donde cada bloque cuenta. Aquí tu progreso depende de tu habilidad, no de la suerte. ¡Crea tu legado!</p>
+</section>
+
+<section id="faq">
+  <h3>Preguntas Frecuentes</h3>
+  <div class="faq-container">
+    <div class="faq"><h4>¿Cómo puedo entrar al servidor?<i class="fas fa-chevron-down"></i></h4><p>Puedes unirte con la IP: wyther.ddns.net en Minecraft Java Edition.</p></div>
+    <div class="faq"><h4>¿En qué versión está el servidor?<i class="fas fa-chevron-down"></i></h4><p>Actualmente soportamos desde la versión 1.21.1 hasta 1.21.8</p></div>
+    <div class="faq"><h4>¿Hay tienda oficial?<i class="fas fa-chevron-down"></i></h4><p>Sí, puedes acceder desde el botón Tienda</p></div>
+    <div class="faq"><h4>¿Tienen eventos?<i class="fas fa-chevron-down"></i></h4><p>Sí, organizamos eventos semanales con recompensas exclusivas.</p></div>
+    <div class="faq"><h4>¿Qué hago si tengo un bug?<i class="fas fa-chevron-down"></i></h4><p>Reporta en nuestro Discord abriendo un ticket en la sección correspondiente.</p></div>
+  </div>
+</section>
+
+<section id="rules">
+  <h3>Reglas Generales</h3>
+  <div class="rules">
+    <h4>1. Mal uso de sistemas</h4>
+    <p>Prohibido usar indebidamente los sistemas como tickets, sugerencias o mercado. Estos existen para ayudar a la comunidad.</p>
+    <h4>2. Retirar boost a cambio de recompensa</h4>
+    <p>No se permite retirar un boost después de recibir una recompensa.</p>
+    <h4>3. Pronunciar nombres de otros servidores</h4>
+    <p>Está prohibido mencionar o promocionar otros servidores.</p>
+    <h4>4. Toxicidad</h4>
+    <p>Respetar siempre a los jugadores, sin insultos ni amenazas.</p>
+    <h4>5. Desacato al staff</h4>
+    <p>Respetar las decisiones del equipo de staff en todo momento.</p>
+    <h4>6. Spam y Flood</h4>
+    <p>No está permitido inundar el chat ni enviar mensajes no deseados.</p>
+    <h4>7. Estafas</h4>
+    <p>Prohibido estafar a jugadores mediante dinero o ítems dentro del servidor.</p>
+    <h4>8. Evasión de sanción</h4>
+    <p>No evadir sanciones usando otras cuentas o métodos.</p>
+    <h4>9. Venta de objetos/cuentas</h4>
+    <p>No se pueden vender objetos o cuentas por dinero real.</p>
+    <h4>10. Suplantación de identidad</h4>
+    <p>Prohibido hacerse pasar por otros jugadores o staff.</p>
+  </div>
+</section>
+
+<script>
+// FAQ dinámico con sonido 8-bit
+const faqs=document.querySelectorAll('.faq');
+const audio=new Audio('https://pixabay.com/es/sound-effects/computer-mouse-click-02-383961/');
+faqs.forEach(faq=>{
+  faq.addEventListener('click',()=>{
+    faq.classList.toggle('active');
+    audio.currentTime=0;
+    audio.play();
+  });
+});
+</script>
+</body>
+</html>
